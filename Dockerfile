@@ -11,7 +11,7 @@ RUN add-apt-repository ppa:ubuntu-toolchain-r/test:
 RUN apt-get update
 
 #install g++ & gcc (4.8.1)
-RUN apt-get install gcc-4.8 g++-4.8 
+RUN apt-get install -y gcc-4.8 g++-4.8 
 
 #update the new gcc & g++ to be the defaults
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 50
